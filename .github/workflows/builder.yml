@@ -19,6 +19,6 @@ jobs:
       - name: Run vuln_express
         run: nohup npm run start &
       - name: Run HawkScan
-        uses: stackhawk/hawkstack-action@v1.2.1
+        uses: stackhawk/hawkscan-action@v1.2.1
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
